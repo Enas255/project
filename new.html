@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="About-Us-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 6.11.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Oswald:200,300,400,500,600,700|Ubuntu:300,300i,400,400i,500,500i,700,700i">
+    
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: #ffff;
+}
+
+.card{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 15px;
+}
+
+.card .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card .imgBx::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #a3b18a;
+}
+
+.card .imgBx::after{
+    content: '';
+    position: absolute;
+    bottom: 68px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #a3b18a;
+}
+
+.card .content{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #344e41;
+    border-radius: 15px;
+    border-top-left-radius:0 ;
+}
+
+.card .content ul{
+    padding: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.card .content p{
+    font-size: 14px;
+}
+
+.card .content .price{
+    position: absolute;
+    top: -52%;
+    height: 52%;
+    width: 50%;
+    background: #344e41;
+    border-top: 10px solid #a3b18a;
+    border-right: 10px solid #a3b18a;
+    border-top-right-radius: 25px;
+}
+
+.card .content .price a{
+    position: relative;
+    background: #fff;
+    padding: 10px 20px;
+    margin: 15px;
+    display: block;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: #344e41;
+    transition: 0.5s;
+    border: 2px solid #344e41;
+}
+
+.card .content .price a:hover{
+    color: #fff;
+    background: #cccccc;
+    border: 2px solid #fff;
+}
+
+.card .content .price::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0#a3b18a ;
+}
+
+.card .content .price::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #344e41;
+}
+
+
+
+        </style>
+</head>
+<body>
+    <header class="u-clearfix u-header u-header" id="sec-8713"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1">
+          <img src="Logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>          <div class="u-custom-menu u-nav-container" wfd-invisible="true">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#" style="padding: 10px 0px;">345 2</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#" style="padding: 10px 0px;">Page 12</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#" style="padding: 10px 0px;">Page 13</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 20px;">345 2</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
+          </div>
+        </nav>
+      </div></header> 
+
+
+
+
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="./1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Plant</b></li>
+                    <li>Goa, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./2.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Mushroom</b></li>
+                    <li>Kolkata, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./3.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Bridge</b></li>
+                    <li>Pune, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="./1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Plant</b></li>
+                    <li>Goa, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./2.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Mushroom</b></li>
+                    <li>Kolkata, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./3.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Bridge</b></li>
+                    <li>Pune, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="./1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Plant</b></li>
+                    <li>Goa, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./2.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Mushroom</b></li>
+                    <li>Kolkata, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./3.jpg" alt="">
+            </div>
+            <div class="content">
+                <span class="price">
+                    <a href="">Forest</a>
+                </span>
+                <ul>
+                    <li><b>Bridge</b></li>
+                    <li>Pune, India.</li><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
